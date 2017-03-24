@@ -1,1 +1,8 @@
 <h1>Welcome! Lets Dig In Your Pantry and Cook Something Up!</h1>
+
+<form name='searchFeature' ng-submit='recipes.findRecipe(recipes.ingredient)'>
+  <label>What are you looking for?</label>
+  <input type="text" name="searchIngredient" placeholder="i.e., 1 Large Apple" ng-model='recipes.ingredient' required>
+  <input type="submit" value="Show me the Recipe">
+
+</form>
